@@ -1,0 +1,11 @@
+
+@font-face{
+  font-family: Arista2;
+  src: url("../font/No.63-ShangShouYingFengShouXieTi-2.ttf");
+}
+body {
+  background-color: yellowgreen;
+  font-family: 'Arista2';
+  font-size: 80px;
+  font-style: 23;
+}
