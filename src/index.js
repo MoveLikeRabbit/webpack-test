@@ -1,7 +1,8 @@
-// import { list } from "./list";
+import { list, list2 } from "./list";
+import jquery from 'jquery';
 // import img from "./assets/images/1626624989518.jpg";
 // import ttf from "./assets/font/No.63-ShangShouYingFengShouXieTi-2.ttf";
-// import "./assets/style/index.css";
+import "./assets/style/index.css";
 // alert(4);
 
 // list();
@@ -10,6 +11,11 @@
 //     list();
 //   });
 // }
-const arr = [1,2,3]
-arr.map(item => item+'蛋蛋')
+// import { mapKeys } from 'lodash-es';
+// mapKeys([1,2,3])
+// list()
 
+// 动态加载
+// import (/* webpackChunkName: 'jquery */ 'jquery').then($ => {
+
+// });

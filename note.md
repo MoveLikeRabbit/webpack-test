@@ -20,3 +20,34 @@ npm install @babel/core @babel/preset-env  babel-loader
 @babel/runtime-corejs3
 
 ---------------------------------------------------------
+ treeShaking  用来移除 未引用代码dead-code 它依赖于 ES2015 模块语法的 静态结构 特性，例如 import 和 export
+
+__________________________
+webpack.config.js 区分 dev pro
+development
+    devServer
+    sourceMap
+    proxy
+
+production
+    treeshaking
+    代码压缩
+    提取公共代码
+
+common
+    entry
+
+util
+    webpack-merge
+
+———————————————————————————————
+打包优化
+    1. 入口配置 entry多入口 webpack.ProvidePlugin
+    2. 抽取公共代码 splitChunksPlugins commonChunksPlugin
+    3. 动态加载：按需加载，懒加载 @babel/plugin-syntax-dynamic-import
+
+---------------------------------------------------------
+css 文件代码分割  MiniCssExtractPlugin
+optimize-css-assets-webpack-plugin
+css-minimizer-webpack-plugin  webpack 5
+配置css 代码分割，因为配置了optimization 要注意影响到了js代码压缩，需要手动配置， terser-webpack-plugin
